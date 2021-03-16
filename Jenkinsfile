@@ -12,6 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'Anvita plays all day'
+            echo '"The path is - ${ChromeDriverPath}"'
           }
         }
 
@@ -24,5 +25,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    ChromeDriverPath = 'C:\\Software\\sonarqube-8.6.1.40680\\bin\\windows-x86-64'
   }
 }
