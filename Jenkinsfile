@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'Anvita plays all day'
-            echo '"The path is - ${ChromeDriverPath}"'
+            echo "The path is - ${ChromeDriverPath}"
           }
         }
 
